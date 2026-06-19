@@ -1,0 +1,151 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Página */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e2e8f0, #f8fafc);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+/* Container */
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+/* Card principal */
+.perfil{
+    width:700px;
+    background:#ffffff;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.perfil:hover{
+    transform:translateY(-5px);
+}
+
+/* Foto */
+.perfil img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #2563eb;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(37,99,235,0.2);
+}
+
+/* Nome */
+.perfil h1{
+    color:#0f172a;
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+/* Cargo */
+.perfil h3{
+    color:#2563eb;
+    font-size:18px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+/* Descrição */
+.perfil > p{
+    color:#475569;
+    line-height:1.8;
+    margin-bottom:25px;
+    font-size:15px;
+}
+
+/* Informações */
+.informacoes{
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    padding:20px;
+    text-align:left;
+    margin-bottom:25px;
+}
+
+.informacoes p{
+    margin:10px 0;
+    color:#334155;
+}
+
+/* Botões */
+.botoes{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.botoes button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.botoes button:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+    box-shadow:0 6px 15px rgba(37,99,235,0.3);
+}
+
+/* Resultado dos botões */
+#resultado{
+    margin-top:25px;
+    background:#eff6ff;
+    border:1px solid #bfdbfe;
+    border-radius:10px;
+    padding:15px;
+    color:#1e3a8a;
+    font-weight:500;
+    min-height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+/* Responsivo */
+@media (max-width:768px){
+
+    .perfil{
+        width:100%;
+        padding:25px;
+    }
+
+    .perfil h1{
+        font-size:26px;
+    }
+
+    .botoes{
+        flex-direction:column;
+    }
+
+    .botoes button{
+        width:100%;
+    }
+}
